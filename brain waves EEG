@@ -1,3 +1,4 @@
+
 import mne
 
 data_path = mne.datasets.sample.data_path()
@@ -7,4 +8,6 @@ raw = mne.io.read_raw_fif(
 )
 
 print(raw)
+
+
 
