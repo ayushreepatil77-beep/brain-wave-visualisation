@@ -1,1 +1,10 @@
-eeg_brainwaves.ipynb
+import mne
+
+data_path = mne.datasets.sample.data_path()
+raw = mne.io.read_raw_fif(
+    data_path + '/MEG/sample/sample_audvis_raw.fif',
+    preload=True
+)
+
+print(raw)
+
